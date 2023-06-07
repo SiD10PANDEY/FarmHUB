@@ -19,7 +19,7 @@ function App() {
           <WalletProvider>
           <Navbar className = "heading">
         <Container style = {{justifyContent:"center"}}>
-          <Navbar.Brand href="#home" className = "text-light text-middle" style = {{fontSize :"50px"}}>RIDEHUB</Navbar.Brand>
+          <Navbar.Brand href="#home" className = "text-light text-middle" style = {{fontSize :"50px"}}>FarmHUB</Navbar.Brand>
         </Container>
       </Navbar>
           <Page />

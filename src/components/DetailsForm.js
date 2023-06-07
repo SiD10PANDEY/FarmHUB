@@ -25,8 +25,8 @@ export default function DetailsForm() {
             onInput={(e) => setType(e.target.value)}
           >
             <option>Choose Option</option>
-            <option value="0">Rider</option>
-            <option value="1">Driver</option>
+            <option value="0">FARMER</option>
+            <option value="1">CONSUMER</option>
           </Form.Select>
         </Form.Group>
         <Button className = "button"

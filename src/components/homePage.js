@@ -38,7 +38,7 @@ export default function HomePage() {
   console.log(rideStatus);
   return (
     <Container style = {{justifyContent: "center",alignItems:"center", display:"flex", flexDirection:"column", width:"100%", height:"100%"}}>
-      <p className = "h1">{userData.type === "rider"?"RIDER":"DRIVER"}</p>
+      <p className = "h1">{userData.type === "rider"?"FARMER":"CONSUMER"}</p>
       {!currentAccount && <Button className = "button" onClick={connectWallet}> Connect Wallet </Button>}
       {currentAccount && 
       <>
@@ -52,7 +52,7 @@ export default function HomePage() {
             setData({apple:50})
             requestCart()
           }}>
-            CONFIRM RIDE
+            CONFIRM ORDER
           </Button> : rideStatus==="ended" ? <p>Please pay</p> : <p>Enjoy your Ride</p>}
         </>
       )}
